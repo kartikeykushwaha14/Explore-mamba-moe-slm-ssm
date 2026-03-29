@@ -130,3 +130,99 @@ The dataset mix helps the model learn:
 ```bash
 git clone https://github.com/YOURNAME/mamba-moe-slm.git
 cd mamba-moe-slm
+'''
+
+# ⚡ Key Learnings
+
+## ❌ Challenges
+
+- Wikipedia-style data caused overly formal outputs  
+- No stop tokens caused endless generation  
+- Small dataset (~10k samples) limited generalization  
+
+---
+
+## ✅ Improvements
+
+- Structured chat templates improved responses  
+- Data quality matters more than model size  
+- Cleaning data improved performance significantly  
+
+---
+
+# 📈 Performance Insights
+
+| Feature       | Transformers | Mamba SSM |
+|--------------|-------------|----------|
+| Complexity   | O(n²)       | O(n)     |
+| Memory       | Grows       | Constant |
+| Long Context | Expensive   | Efficient |
+| Inference    | Slower      | Faster   |
+
+---
+
+# 🧩 How It Works (Simple)
+
+### Transformer:
+- Processes all tokens together  
+- High compute cost  
+
+### Mamba:
+- Processes sequentially  
+- Maintains internal state  
+- Efficient for long sequences  
+
+---
+
+# 🛠️ Customization
+
+You can modify:
+
+- Model size (layers, hidden size)  
+- Number of experts  
+- Dataset composition  
+- Training hyperparameters  
+
+---
+
+# 💻 Hardware Notes
+
+- Works on 4GB VRAM GPUs (tested on RTX 3050)  
+- CPU supported (slow)  
+- Mixed precision recommended  
+
+---
+
+# 🚀 Future Improvements
+
+- Better tokenizer  
+- Improved MoE routing  
+- Larger datasets  
+- LoRA / PEFT integration  
+- Web or API interface  
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome:
+
+- Open issues  
+- Suggest features  
+- Submit pull requests  
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+- ⭐ Star the repo  
+- 🍴 Fork it  
+- 🧠 Experiment with it  
+
+---
+
+# 🔗 License
+
+MIT License (update if needed)
