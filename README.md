@@ -130,7 +130,17 @@ The dataset mix helps the model learn:
 ```bash
 git clone https://github.com/YOURNAME/mamba-moe-slm.git
 cd mamba-moe-slm
-'''
+Install Dependencies
+pip install -r requirements.txt
+Check GPU
+python -c "import torch; print(torch.cuda.is_available())"
+```
+
+## 🔹 Usage
+```bash
+Run Model and Train
+python mamba_modelv3.py
+```
 
 # ⚡ Key Learnings
 
